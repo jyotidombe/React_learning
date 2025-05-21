@@ -21,6 +21,7 @@ export default function App() {
      */
     
     let starIcon = contact.isFavorite? starFilled : starEmpty
+    const starAltText = contact.isFavorite ? "Filled star icon (favorite)" : "Empty star icon (not favorite)"
 
     function toggleFavorite() {
         setContact(prevContact => ({
@@ -46,7 +47,7 @@ export default function App() {
                     >
                         <img
                             src={starIcon}
-                            alt="empty star icon"
+                            alt={starAltText}
                             className="favorite"
                         />
                     </button>
@@ -54,7 +55,7 @@ export default function App() {
                         {contact.firstName} {contact.lastName}
                     </h2>
                     <p className="contact">{contact.phone}</p>
-                    <p className="contact">{contact.email}</p>
+                    <p className="email">{contact.email}</p>
                 </div>
 
             </article>
