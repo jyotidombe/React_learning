@@ -36,7 +36,7 @@ export default function App() {
                 <img
                     src={avatar}
                     className="avatar"
-                    alt="User profile picture of John Doe"
+                    alt={contact.firstName}
                 />
                 <div className="info">
                     <button
