@@ -24,6 +24,10 @@
   color: white;
 }
 
+.changeHeader{
+  color: red;
+}
+
 .App-link {
   color: #61dafb;
 }
